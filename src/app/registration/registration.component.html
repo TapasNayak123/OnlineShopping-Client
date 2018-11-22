@@ -1,0 +1,31 @@
+<body class="content">
+    <div class="col-lg-12">
+        <app-message></app-message>
+      </div>
+  <div class="col-lg-12">
+    <div>
+      <label>Name :</label>
+      <input class="form-control" type="text" placeholder="name" [(ngModel)]="registration.name">
+    </div>
+
+    <div>
+      <label>Email :</label>
+      <input class="form-control" type="email" placeholder="abc@pqr.com" [(ngModel)]="registration.email">
+    </div>
+
+    <div>
+      <label>Mobile :</label>
+      <input class="form-control" type="tel" placeholder="+91 12345678" [(ngModel)]="registration.mobile">
+    </div>
+
+    <div>
+      <label>Password :</label>
+      <input class="form-control" type="password" placeholder="enter password" [(ngModel)]="registration.password">
+    </div>
+
+    <div>
+      <button class="btn btn-primary" (click)="register()">Register</button>
+    </div>
+  </div>
+
+</body>
